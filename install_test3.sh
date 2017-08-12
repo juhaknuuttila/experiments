@@ -9,7 +9,7 @@ REPO=
 
 if [ -f /usr/bin/R ]
 then
-        biocLite = "https://bioconductor.org/biocLite.R"
+        biocLite = "http://bioconductor.org/biocLite.R"
         R --save --restore -q -e "source(c($biocLite))"
 
         #loop through the parameters (i.e. packages to install)
