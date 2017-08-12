@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-#usage - ./install_test3 <package1> <package2> <package3> ...
-#example - ./install_test3 useCRAN bitops stringr arules
+#usage - ./InstallRPackages <package1> <package2> <package3> ...
+#example - ./InstallRPackages useCRAN bitops stringr arules
 
 echo "Sample action script to install R packages..."
 
@@ -9,7 +9,7 @@ REPO=
 
 if [ -f /usr/bin/R ]
 then
-        $biocLite = "biocLite"
+        biocLite = "biocLite"
         R --save --restore -q -e "source(c($biocLite))"
 
         #loop through the parameters (i.e. packages to install)
